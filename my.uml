@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Tnn_8MMBEeWojYw9uC70CQ" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_eQlSgMOMEeWojYw9uC70CQ" name="Class Diagrams">
+    <packagedElement xmi:type="uml:Class" xmi:id="_tMvv0MOMEeWojYw9uC70CQ" name="Maze">
+      <ownedAttribute xmi:id="_u5Yl4MOOEeWojYw9uC70CQ" name="numberCols">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u5Z0AMOOEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u5Z0AcOOEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_v7UkAMOOEeWojYw9uC70CQ" name="numberRows">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v7VLEMOOEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v7VLEcOOEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="__B9zAMOOEeWojYw9uC70CQ" name="walls">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__B_BIMOOEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__B_BIcOOEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Czzs8MOPEeWojYw9uC70CQ" name="myGoal" type="_ypGq0MOMEeWojYw9uC70CQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cz07EMOPEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cz1iIMOPEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Ehv1cMOPEeWojYw9uC70CQ" name="startState" type="_TIbc4MONEeWojYw9uC70CQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ehv1ccOPEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehv1csOPEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_yLfaYMOPEeWojYw9uC70CQ" name="Maze">
+        <ownedParameter xmi:id="_0M__IMOPEeWojYw9uC70CQ" name="int nr"/>
+        <ownedParameter xmi:id="_0NAmMMOPEeWojYw9uC70CQ" name="int nc"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_2JzqEMOPEeWojYw9uC70CQ" name="Maze">
+        <ownedParameter xmi:id="_5YP8AMOPEeWojYw9uC70CQ" name="int nr"/>
+        <ownedParameter xmi:id="_5YP8AcOPEeWojYw9uC70CQ" name="int  nc"/>
+        <ownedParameter xmi:id="_5YQjEMOPEeWojYw9uC70CQ" name="double probWall"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_-mOcwMOPEeWojYw9uC70CQ" name="Maze">
+        <ownedParameter xmi:id="_BROqcMOQEeWojYw9uC70CQ" name="File mazeFile"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="__B0MkMOPEeWojYw9uC70CQ" name="int numRows"/>
+      <ownedOperation xmi:id="_HIy6wMOQEeWojYw9uC70CQ" name="int numCols"/>
+      <ownedOperation xmi:id="_LNL9QMOQEeWojYw9uC70CQ" name="WalkerState start"/>
+      <ownedOperation xmi:id="_QJSD0MOQEeWojYw9uC70CQ" name="Location goal"/>
+      <ownedOperation xmi:id="_SW7AEMOQEeWojYw9uC70CQ" name="boolean isWall">
+        <ownedParameter xmi:id="_UOciYMOQEeWojYw9uC70CQ" name="Location loc"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ypGq0MOMEeWojYw9uC70CQ" name="Location">
+      <ownedAttribute xmi:id="_W8I_EMONEeWojYw9uC70CQ" name="myRow" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W8KNMMONEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W8KNMcONEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_P0vMoMOPEeWojYw9uC70CQ" name="myCol" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P0wawMOPEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P0wawcOPEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-HXPIMOSEeWqY7XrG2TygQ" name="property3">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-HYdQMOSEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-HYdQcOSEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_gGyz8MOREeWojYw9uC70CQ" name="Location">
+        <ownedParameter xmi:id="_hapogMOREeWojYw9uC70CQ" name="int row"/>
+        <ownedParameter xmi:id="_hapogcOREeWojYw9uC70CQ" name="int col"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_iE0m4MOREeWojYw9uC70CQ" name="int row"/>
+      <ownedOperation xmi:id="_i8HbQMOREeWojYw9uC70CQ" name="int col"/>
+      <ownedOperation xmi:id="_j2mGgMOREeWojYw9uC70CQ" name="boolean equals">
+        <ownedParameter xmi:id="_k1wdcMOREeWojYw9uC70CQ" name="Object other"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_zy9AEMOSEeWqY7XrG2TygQ" name="int hashCode"/>
+      <ownedOperation xmi:id="_4W5FUMOSEeWqY7XrG2TygQ" name="int compareTo"/>
+      <ownedOperation xmi:id="_FkyC8MOTEeWqY7XrG2TygQ" name="String toString"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TIbc4MONEeWojYw9uC70CQ" name="WalkerState">
+      <ownedAttribute xmi:id="_UPjdAMONEeWojYw9uC70CQ" name="myLoc" visibility="private" type="_ypGq0MOMEeWojYw9uC70CQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UPkrIMONEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UPlSMMONEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZRKq0MOPEeWojYw9uC70CQ" name="myDir" visibility="private" type="_cfN7MMOPEeWojYw9uC70CQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZRLR4MOPEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZRL48MOPEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KWELMMOUEeWqY7XrG2TygQ" name="WalkerState">
+        <ownedParameter xmi:id="_LK7WoMOUEeWqY7XrG2TygQ" name="state"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ls0iwMOUEeWqY7XrG2TygQ" name="Location location"/>
+      <ownedOperation xmi:id="_Mz6GoMOUEeWqY7XrG2TygQ" name="Direction direction"/>
+      <ownedOperation xmi:id="_ONzRwMOUEeWqY7XrG2TygQ" name="void turnRight"/>
+      <ownedOperation xmi:id="_SNZT0MOUEeWqY7XrG2TygQ" name="void turnLeft"/>
+      <ownedOperation xmi:id="_TZXXsMOUEeWqY7XrG2TygQ" name="direction toRight"/>
+      <ownedOperation xmi:id="_VJQoAMOUEeWqY7XrG2TygQ" name="Direction toLeft"/>
+      <ownedOperation xmi:id="_WuLXYMOUEeWqY7XrG2TygQ" name="void turnAround"/>
+      <ownedOperation xmi:id="_YHTtgMOUEeWqY7XrG2TygQ" name="Direction toReverse"/>
+      <ownedOperation xmi:id="_ZajeEMOUEeWqY7XrG2TygQ" name="Location neighborTo">
+        <ownedParameter xmi:id="_arC1kMOUEeWqY7XrG2TygQ" name="Direction dir"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_cVdwAMOUEeWqY7XrG2TygQ" name="void moveToward">
+        <ownedParameter xmi:id="_dcV4gMOUEeWqY7XrG2TygQ" name="Direction dir"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_d6IAsMOUEeWqY7XrG2TygQ" name="void moveForward"/>
+      <ownedOperation xmi:id="_fBvJAMOUEeWqY7XrG2TygQ" name="String toString"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Z2wgoMOOEeWojYw9uC70CQ" name="MazeDisplay"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cfN7MMOPEeWojYw9uC70CQ" name="Direction">
+      <ownedAttribute xmi:id="_n3PjYMOPEeWojYw9uC70CQ" name="dirInDegrees" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n3QxgMOPEeWojYw9uC70CQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n3QxgcOPEeWojYw9uC70CQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lwCCcMOTEeWqY7XrG2TygQ" name="static boolean DIAGONALSON">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lwCCccOTEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lwCpgMOTEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_vDcukMOTEeWqY7XrG2TygQ" name="Direction"/>
+      <ownedOperation xmi:id="_xABwAMOTEeWqY7XrG2TygQ" name="Direction">
+        <ownedParameter xmi:id="_yDUZAMOTEeWqY7XrG2TygQ" name="int degrees"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yt1VoMOTEeWqY7XrG2TygQ" name="boolean equals">
+        <ownedParameter xmi:id="_z3lzAMOTEeWqY7XrG2TygQ" name="Object other"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_0Xv5wMOTEeWqY7XrG2TygQ" name="int hashCode"/>
+      <ownedOperation xmi:id="_1drAAMOTEeWqY7XrG2TygQ" name="Direction toRight"/>
+      <ownedOperation xmi:id="_3JKRcMOTEeWqY7XrG2TygQ" name="Direction toLeft"/>
+      <ownedOperation xmi:id="_7Az4cMOTEeWqY7XrG2TygQ" name="Direction reverse"/>
+      <ownedOperation xmi:id="_9POQwMOTEeWqY7XrG2TygQ" name="String toString"/>
+      <ownedOperation xmi:id="_--dZwMOTEeWqY7XrG2TygQ" name="Direction randomDirection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8YLpIMOVEeWqY7XrG2TygQ" name="IterativeWalker">
+      <ownedAttribute xmi:id="_FhmEsMOWEeWqY7XrG2TygQ" name="Set beenThere" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FhmrwMOWEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FhmrwcOWEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GeE7EMOWEeWqY7XrG2TygQ" name="SearchStrategy searchStrat" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GeFiIMOWEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GeFiIcOWEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IMF8EMOWEeWqY7XrG2TygQ" name="Stack visited" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IMF8EcOWEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMF8EsOWEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JSTWMMOWEeWqY7XrG2TygQ" name="intCount" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JSTWMcOWEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JSTWMsOWEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_gkylQMOWEeWqY7XrG2TygQ" name="property5">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gkylQcOWEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gkzMUMOWEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_B9EOAMOWEeWqY7XrG2TygQ" name="IterativeWalker">
+        <ownedParameter xmi:id="_FI1mcMOWEeWqY7XrG2TygQ" name="Maze maze"/>
+        <ownedParameter xmi:id="_FI1mccOWEeWqY7XrG2TygQ" name="MazeDisplay md"/>
+        <ownedParameter xmi:id="_FI1mcsOWEeWqY7XrG2TygQ" name="SearchStrategy ss"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NHFPYMOWEeWqY7XrG2TygQ" name="SearchStrategy searcher" visibility="protected"/>
+      <ownedOperation xmi:id="_QzsEAMOWEeWqY7XrG2TygQ" name="void initialize" visibility="protected"/>
+      <ownedOperation xmi:id="_TwZswMOWEeWqY7XrG2TygQ" name="boolean done" visibility="protected"/>
+      <ownedOperation xmi:id="_W9y10MOWEeWqY7XrG2TygQ" name="void takeStep" visibility="protected"/>
+      <ownedOperation xmi:id="_bOG0cMOWEeWqY7XrG2TygQ" name="void check" visibility="protected">
+        <ownedParameter xmi:id="_cVWwYMOWEeWqY7XrG2TygQ" name="Direction dir"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_eMR1wMOWEeWqY7XrG2TygQ" name="void wrapup" visibility="protected"/>
+      <ownedOperation xmi:id="_g2FwoMOWEeWqY7XrG2TygQ" name="Stack extractPath" visibility="protected">
+        <ownedParameter xmi:id="_iTgJ0MOWEeWqY7XrG2TygQ" name="Stack visited"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_k_nx0MOWEeWqY7XrG2TygQ" name="void displayPath" visibility="protected">
+        <ownedParameter xmi:id="_mN0DQMOWEeWqY7XrG2TygQ" name="Stack path"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nyTU0MOWEeWqY7XrG2TygQ" name="void fail" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_B3xo4MOXEeWqY7XrG2TygQ" name="BreadthStrategy">
+      <ownedAttribute xmi:id="_F2gIQMOXEeWqY7XrG2TygQ" name="Queue&lt;WalkerState> searchQueue" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F2gIQcOXEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F2gIQsOXEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_I77oIMOXEeWqY7XrG2TygQ" name="void init"/>
+      <ownedOperation xmi:id="_KYQcMMOXEeWqY7XrG2TygQ" name="void store">
+        <ownedParameter xmi:id="_LrSxYMOXEeWqY7XrG2TygQ" name="WalkerState state"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MLXYkMOXEeWqY7XrG2TygQ" name="boolean isDone"/>
+      <ownedOperation xmi:id="_NZ0IsMOXEeWqY7XrG2TygQ" name="walkerState nextState"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_agVTAMOXEeWqY7XrG2TygQ" name="AutoWalker">
+      <ownedOperation xmi:id="_bqOTQMOXEeWqY7XrG2TygQ" name="AutoWalker">
+        <ownedParameter xmi:id="_dKdW8MOXEeWqY7XrG2TygQ" name="Maze maze"/>
+        <ownedParameter xmi:id="_dKdW8cOXEeWqY7XrG2TygQ" name="MazeDisplay md"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_d2JYQMOXEeWqY7XrG2TygQ" name="void run"/>
+      <ownedOperation xmi:id="_ewYL4MOXEeWqY7XrG2TygQ" name="void initialize" visibility="protected"/>
+      <ownedOperation xmi:id="_gs-bcMOXEeWqY7XrG2TygQ" name="void wrapup" visibility="protected"/>
+      <ownedOperation xmi:id="_jRxTcMOXEeWqY7XrG2TygQ" name="abstract void takeStep" visibility="protected"/>
+      <ownedOperation xmi:id="_lCu6wMOXEeWqY7XrG2TygQ" name="abstract boolean done" visibility="protected"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wKM-cMOXEeWqY7XrG2TygQ" name="GenericWalker">
+      <ownedAttribute xmi:id="_x3Q9MMOXEeWqY7XrG2TygQ" name="WalkerState myState">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x3Q9McOXEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x3RkQMOXEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zFUEsMOXEeWqY7XrG2TygQ" name="Maze myMaze">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zFUEscOXEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zFUEssOXEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0FnEEMOXEeWqY7XrG2TygQ" name="MazeDisplay myDisplay">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0FnEEcOXEeWqY7XrG2TygQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0FnEEsOXEeWqY7XrG2TygQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_1ccUIMOXEeWqY7XrG2TygQ" name="GenericWalker">
+        <ownedParameter xmi:id="_25ruMMOXEeWqY7XrG2TygQ" name="Maze maze"/>
+        <ownedParameter xmi:id="_25ruMcOXEeWqY7XrG2TygQ" name="MazeDisplay md"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3eH4AMOXEeWqY7XrG2TygQ" name="WalkerState state" visibility="protected"/>
+      <ownedOperation xmi:id="_8KKJUMOXEeWqY7XrG2TygQ" name="void setState" visibility="protected">
+        <ownedParameter xmi:id="_9E4FIMOXEeWqY7XrG2TygQ" name="WalkerState"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_-y5GIMOXEeWqY7XrG2TygQ" name="void setState" visibility="protected">
+        <ownedParameter xmi:id="__-kPEMOXEeWqY7XrG2TygQ" name="WalkerState state"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_D7uoMMOYEeWqY7XrG2TygQ" name="Maze maze" visibility="protected"/>
+      <ownedOperation xmi:id="_E3xZsMOYEeWqY7XrG2TygQ" name="MazeDisplay display" visibility="protected"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_54oXIMONEeWojYw9uC70CQ" name="Scenario Diagrams">
+    <ownedAttribute xmi:id="_E63VgMOOEeWojYw9uC70CQ" name="myMaze" type="_tMvv0MOMEeWojYw9uC70CQ"/>
+    <lifeline xmi:id="_E638kMOOEeWojYw9uC70CQ" name="myMaze " represents="_E63VgMOOEeWojYw9uC70CQ"/>
+  </packagedElement>
+</uml:Model>
